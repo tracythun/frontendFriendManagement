@@ -1,19 +1,18 @@
-<table>
+<table class="Table">
     <tr>
-       <td><input type="text" placeholder="My email"></td>
+       <td><input type="text" value={{activeUserObject.email}}  [readonly]="true"></td>
        <td><button type="submit" class="post">Post Update</button></td>
     </tr>
     <tr>
        <input type="text" id="email" placeholder="Friend's email">
     </tr>
 </table>
-<input type="textarea" class="textarea">
 
 <mat-card class="create-post">
     <mat-card-content>
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <mat-form-field class="card-full-width">
-                <input matInput placeholder="Have anything to share ...." formControlName="post">
+                <input matInput placeholder="Have anything to share?" formControlName="post">
             </mat-form-field>
 
             <mat-card-actions align="end">
