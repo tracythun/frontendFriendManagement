@@ -1,0 +1,20 @@
+<div fxLayout="row">
+    <div fxFlex="15%"></div>
+    <div fxFlex='15%'>
+        <app-profile></app-profile>
+    </div>
+    <table id="Table2">
+        <tr>
+            <td><input type="text" value={{activeUserObject.email}}  [readonly]="true"></td>
+            <td><button type="submit" class="post">Common friends</button></td>
+        </tr>
+    </table>
+    
+    <table class="Table1">
+        <tr>
+            <th><input type="checkbox" style="width:30px;"></th>
+            <th style="width:400px; text-align: left;">My friends</th>
+        </tr>
+    </table>
+  
+</div>

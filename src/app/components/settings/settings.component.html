@@ -1,0 +1,19 @@
+<div fxLayout="row">
+    <div fxFlex="15%"></div>
+    <div fxFlex='15%'>
+        <app-profile></app-profile>
+    </div>
+    <div fxFlex='3%'></div>
+        <table class="table2">
+            <tr>  
+              My email:
+            </tr>
+            <tr>
+              <input type="text" value={{activeUserObject.email}}  [readonly]="true">
+            </tr>
+            <tr><button type="submit" class="link" routerLink="/friends">Link Up</button></tr>
+            <tr>
+              <input type="text" placeholder="Friend's email">
+            </tr>
+        </table>
+</div>
